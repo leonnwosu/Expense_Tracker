@@ -20,7 +20,7 @@ Dashboard: A visual representation (using charts) of the user’s expenses over 
 Backend API: A RESTful API for managing expenses, users, and data interactions.
 Database: Stores user data and expenses.
 
-Step 1: Set Up the Development Environment
+## Step 2: Set Up the Development Environment
 1.1. Install Node.js and npm
 Go to nodejs.org to download and install Node.js. This will also install npm (Node Package Manager).
 1.2. Install Expo CLI
@@ -51,7 +51,7 @@ Copy code
 expo start
 Open the Expo Go app on your phone and scan the QR code to see the app running live.
 
-Step 2: Set Up Firebase
+## Step 3: Set Up Firebase
 2.1. Create a Firebase Project
 Go to Firebase Console.
 Click Add Project and follow the instructions.
@@ -91,7 +91,7 @@ export const auth = firebase.auth();
 export const db = firebase.firestore();
 Replace the configuration values (apiKey, authDomain, etc.) with your Firebase project credentials from the Firebase Console.
 
-Step 3: Set Up Navigation
+## Step 4: Set Up Navigation
 3.1. Install React Navigation
 React Navigation is needed for navigating between screens (e.g., login, dashboard, expense input).
 
@@ -125,7 +125,7 @@ export default function App() {
     </NavigationContainer>
   );
 }
-Step 4: Implement Authentication with Firebase
+## Step 5: Implement Authentication with Firebase
 4.1. Create SignUpScreen.js
 In the screens folder, create a file SignUpScreen.js:
 
@@ -190,7 +190,7 @@ const LoginScreen = ({ navigation }) => {
 };
 
 export default LoginScreen;
-Step 5: Set Up Firestore for Storing Expenses
+## Step 6: Set Up Firestore for Storing Expenses
 5.1. Create DashboardScreen.js
 Create a file DashboardScreen.js to allow users to add and view their expenses:
 
@@ -251,7 +251,7 @@ const DashboardScreen = () => {
 };
 
 export default DashboardScreen;
-Step 6: Testing and Deployment
+## Step 7: Testing and Deployment
 6.1. Test the App
 Use Expo Go to scan the QR code and test the app on your device.
 6.2. Build for Android and iOS
@@ -261,5 +261,7 @@ bash
 Copy code
 expo build:android
 expo build:ios
-Conclusion
+
+
+## Conclusion
 You now have a clear step-by-step guide for building a mobile Expense Tracker using React Native (Expo) and Firebase. This stack simplifies authentication and data management, eliminating the need for a separate backend (like Flask). You can add additional features like real-time updates or notifications using Firebase Cloud Functions in the future.
