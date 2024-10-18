@@ -4,7 +4,7 @@
 
 
 ## tools for project
-Front-end: React.js for UI, Chart.js for visualizing expenses
+Front-end: React native for UI, react-native-svg-charts for visualizing expenses
 back-end: firebase
 Database: Firebase(NoSQL)
 hosting: Firebase for front-end and back-end
